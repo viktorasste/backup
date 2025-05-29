@@ -20,12 +20,7 @@
 }
 
 @layer components {
-  .accent {
-    --tw-bg-opacity: 1;
-    background-color: rgb(0 166 113 / var(--tw-bg-opacity));
-    --tw-border-opacity: 1;
-    border-color: rgb(0 166 113 / var(--tw-border-opacity));
-  }
+  /* .accent class removed as all accent usage should now use Tailwind's bg-accent, border-accent, etc. */
 }
 
 @layer base {

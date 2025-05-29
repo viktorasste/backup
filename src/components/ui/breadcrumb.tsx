@@ -1,7 +1,8 @@
 import * as React from "react"
-import { Slot } from "@radix-ui/react-slot"
+
 import { ChevronRight, MoreHorizontal } from "lucide-react"
 
+import { Slot } from "@radix-ui/react-slot"
 import { cn } from "@/lib/utils"
 
 const Breadcrumb = React.forwardRef<
@@ -50,7 +51,7 @@ const BreadcrumbLink = React.forwardRef<
   return (
     <Comp
       ref={ref}
-      className={cn("transition-colors hover:text-foreground", className)}
+      className={cn("text-accent hover:text-cta-hover transition-colors", className)}
       {...props}
     />
   )

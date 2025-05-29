@@ -1,7 +1,7 @@
+import React, { useEffect, useState } from 'react';
 
-import React, { useState, useEffect } from 'react';
-import { Menu } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { Menu } from 'lucide-react';
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
@@ -36,7 +36,7 @@ const Navbar = () => {
     >
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center text-accent hover:text-cta-hover transition-colors">
           <img 
             src="/lovable-uploads/f65659aa-cd54-431a-a8a3-3b70710be1fe.png" 
             alt="LITUOKLIS Logotipas" 
@@ -49,10 +49,10 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#projects" className="font-medium text-foreground hover:text-primary transition-colors">
+          <a href="#projects" className="font-medium text-accent hover:text-cta-hover transition-colors">
             Paslaugos
           </a>
-          <a href="#about" className="font-medium text-foreground hover:text-primary transition-colors">
+          <a href="#about" className="font-medium text-accent hover:text-cta-hover transition-colors">
             Apie mus
           </a>
         </nav>
@@ -80,14 +80,14 @@ const Navbar = () => {
         <div className="container-custom py-4 flex flex-col space-y-4">
           <a 
             href="#projects" 
-            className="font-medium py-2 text-foreground hover:text-primary transition-colors"
+            className="font-medium py-2 text-accent hover:text-cta-hover transition-colors"
             onClick={() => setMobileMenuOpen(false)}
           >
             Paslaugos
           </a>
           <a 
             href="#about" 
-            className="font-medium py-2 text-foreground hover:text-primary transition-colors"
+            className="font-medium py-2 text-accent hover:text-cta-hover transition-colors"
             onClick={() => setMobileMenuOpen(false)}
           >
             Apie mus
