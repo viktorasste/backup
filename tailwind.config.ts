@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,13 +62,22 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-        		// Electronics-inspired colors updated to match the logo
+				cta: {
+					hover: '#3CC4A0'
+				},
+				text: {
+					main: '#212121',
+					light: '#EDEDED'
+				},
 				electronics: {
-					green: '#00A651', // Circuit green from logo
-					cyan: '#00BFFF', // Cyan accent
-					mint: '#4AE3B5', // Mint accent
-					dark: '#121212', // Dark background
-					gray: '#95A5A6' // Component gray (unchanged)
+					primary: '#146A4B',
+					secondary: '#88BCA3',
+					accent: '#B6E0DD',
+					lightbg: '#1E1E1E',
+					cardbg: '#F1F7F5',
+					cta: '#3CC4A0',
+					textmain: '#212121',
+					textlight: '#EDEDED'
 				}
 			},
 			borderRadius: {
@@ -111,8 +119,8 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out forwards'
 			},
 			fontFamily: {
-				sans: ['Montserrat', 'sans-serif'],
-				display: ['Playfair Display', 'serif']
+				sans: ['Roboto', 'sans-serif'],
+				display: ['Roboto', 'sans-serif']
 			}
 		}
 	},

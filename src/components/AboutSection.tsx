@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+
 import AboutSlider from './AboutSlider';
 import { Button } from "@/components/ui/button";
 
@@ -26,26 +27,26 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section id="about" className="accent section-padding" ref={sectionRef}>
+    <section id="about" className="bg-background text-foreground section-padding" ref={sectionRef}>
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Column */}
           <div className="animate-on-scroll">
             <div className="relative">
               <AboutSlider />
-              <div className="absolute -bottom-6 -right-6 bg-secondary p-6 rounded-lg shadow-lg hidden md:block">
-                <p className="text-5xl font-bold text-white">100+</p>
-                <p className="text-white font-medium">Projektų</p>
+              <div className="absolute -bottom-6 -right-6 bg-accent p-6 rounded-lg shadow-lg hidden md:block">
+                <p className="text-5xl font-bold text-primary">100+</p>
+                <p className="text-primary font-medium">Projektų</p>
               </div>
             </div>
           </div>
           
           {/* Content Column */}
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold animate-on-scroll">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary animate-on-scroll">
               Apie LITUOKLIS
             </h2>
-            <p className="text-lg text-gray-700 animate-on-scroll">
+            <p className="text-lg text-text-light animate-on-scroll">
               LITUOKLIS yra bendruomenės kuriama platforma elektronikos entuziastams, kūrėjams ir mėgėjams. Mes teikiame detalias pamokas, projektų idėjas ir išteklius, kurie padės jums mokytis ir kurti nuostabius elektronikos projektus.
             </p>
             
