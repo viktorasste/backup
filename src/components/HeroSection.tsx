@@ -15,20 +15,20 @@ const HeroSection = () => {
       {/* Background with circuit pattern overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ 
+        style={{
           backgroundImage: 'url(https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?q=80&w=3648&auto=format&fit=crop)',
-          backgroundPosition: 'center'
+          backgroundPosition: '100% 10%'
         }}
       >
         {/* Dark overlay with circuit pattern */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/95 z-0"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/95 z-0"></div>
         
         {/* Circuit pattern overlay */}
         <div 
           className="absolute inset-0 opacity-20 z-0 bg-repeat"
           style={{
             backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'100\' height=\'100\' viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M10,10 L30,10 L30,30 L50,30 L50,50 L70,50 L70,70 L90,70 L90,90\' stroke=\'%2300A651\' stroke-width=\'1\' fill=\'none\'/%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'2\' fill=\'%2300BFFF\'/%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'2\' fill=\'%2300BFFF\'/%3E%3Ccircle cx=\'70\' cy=\'70\' r=\'2\' fill=\'%2300BFFF\'/%3E%3C/svg%3E")',
-            backgroundSize: '200px 200px'
+            backgroundSize: '150px 150px'
           }}
         ></div>
       </div>

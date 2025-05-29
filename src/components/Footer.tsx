@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <a href="#" className="inline-block mb-4">
-              <span className="text-2xl font-display font-bold">LITUOKLIS</span>
+              <span className="text-2xl font-display font-bold">MB "LITUOKLIS"</span>
             </a>
             <p className="text-white/80 mb-6">
               Suteikiame kūrėjams žinias ir išteklius nuostabių elektronikos projektų kūrimui.

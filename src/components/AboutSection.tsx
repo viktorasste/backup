@@ -1,5 +1,5 @@
-
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
+import AboutSlider from './AboutSlider';
 import { Button } from "@/components/ui/button";
 
 const AboutSection = () => {
@@ -26,17 +26,13 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section id="about" className="section-padding accent" ref={sectionRef}>
+    <section id="about" className="accent section-padding" ref={sectionRef}>
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Column */}
           <div className="animate-on-scroll">
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?q=80&w=2070&auto=format&fit=crop" 
-                alt="Elektronikos darbo stalas" 
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
+              <AboutSlider />
               <div className="absolute -bottom-6 -right-6 bg-secondary p-6 rounded-lg shadow-lg hidden md:block">
                 <p className="text-5xl font-bold text-white">100+</p>
                 <p className="text-white font-medium">Projektų</p>

@@ -9,7 +9,7 @@ export const slides = [
   {
     title: "Kurkite nuostabius elektronikos projektus",
     description: "Projektuojame, programuojame ir gaminame elektronikos gaminius pagal užsakovo reikalavimus.",
-    image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?q=80&w=3648&auto=format&fit=crop"
+    image: "images/implementing-ideas.jpg"
   },
   {
     title: "Išmokite elektronikos pagrindus",
@@ -53,7 +53,7 @@ const HeroSlider = () => {
               <img 
                 src={slide.image} 
                 alt={slide.title} 
-                className="w-[500px] h-[500px] rounded-lg shadow-lg"
+                className="w-[600px] h-[600px] rounded-lg shadow-lg"
               />
             </div>
           </div>

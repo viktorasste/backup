@@ -30,7 +30,7 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
         isScrolled 
-          ? "bg-background/90 backdrop-blur-sm shadow-md py-2" 
+          ? "bg-background/50 backdrop-blur-sm shadow-md py-2" 
           : "bg-transparent py-4"
       )}
     >
